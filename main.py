@@ -1,14 +1,9 @@
-# Ask the user to enter the grades
-v1 = float(input("Ingrese el primer voltaje: "))
-v2 = float(input("Ingese el segundo voltaje: "))
-v3 = float(input("Ingese el tercer voltaje:"))
+#ejercicio 4
+# Get input from the user
+metros = float(input("Ingrese el valor en metros: "))
 
-# Calculate the average
-average = (v1 + v2 + v3) / 3
+# Converte los metros a kilometros
+kilometros= metros / 1000
 
-if average < 115:
-  print(f"El voltaje es correcto ya que su promedio es: {average}")
-elif average >115 and average<220:
-    print(f"El voltaje es alto ya que su promedio es: {average}")
-elif average > 220:
-    print(f"Peligro ya que su promedio es: {average}")
+# Print the result
+print(f"{metros} metros equivale a {kilometros} kilometros.")
