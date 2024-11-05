@@ -1,13 +1,13 @@
-#promedio
-# Ask the user to enter the grades
-v1 = float(input("Ingrese el primer voltaje: "))
-v2 = float(input("Ingese el segundo voltaje: "))
-v3 = float(input("Ingese el tercer voltaje:"))
-v4 = float(input("Ingrese el cuarto voltaje: "))
-v5 = float(input("Ingrese el quinto voltaje: "))
-# Calculate the average
-average = (v1 + v2 + v3 + v4+ v5) / 5
-if average > 220:
-  print(f"El voltaje es alto ya que su promedio es: {average}")
+import math
+
+def area_triangulo_equilatero(lado):
+    return (math.sqrt(3) / 4) * lado ** 2
+
+# Ejemplo de uso
+lado = float(input("Ingrese el lado triangulo: "))
+area = area_triangulo_equilatero(lado)
+if area < 1000:
+  print(f"El area del triangulo equilatero es: {area}")
 else:
-    print(f"El voltaje es correcto ya que su promedio es: {average}")
+    print(f"datos no validos: {area}")
+
